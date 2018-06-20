@@ -23,7 +23,7 @@
       = link_to root_path do
         %button.btn__primary Home
       %button.btn__primary
-        Blog
+        Blog - Ruby on Rails
       = link_to about_path do
         %button.btn__primary About
 
@@ -31,4 +31,10 @@
 
   -# Main content
   .main
+    - flash.each do |key, value|
+      .modal{ :id => "myModal" }
+        .modal-content{ class: key }
+          %span.close{ :onclick => "closeModal();" } &times;
+          %p
+            = value
     = yield

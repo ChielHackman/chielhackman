@@ -16,3 +16,7 @@
   .signup__box
     %h3
       Get the latest posts in your mailbox!
+    = form_for @client do |f|
+      = f.email_field :email, placeholder: "email@example.com"
+      = f.submit "Submit"
+    %small By submitting this form you agree that I save your email.

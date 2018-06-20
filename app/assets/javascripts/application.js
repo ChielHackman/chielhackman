@@ -13,3 +13,7 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
