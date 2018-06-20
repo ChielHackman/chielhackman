@@ -20,10 +20,13 @@
       %p.text--blue Louis Srygley
     %hr
     .sidenav__footer
+      = link_to root_path do
+        %button.btn__primary Home
       %button.btn__primary
         Blog
-      %button.btn__primary
-        About
+      = link_to about_path do
+        %button.btn__primary About
+
       %small &copy; 2018 Chiel Hackman
 
   -# Main content
