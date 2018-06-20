@@ -1,0 +1,11 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  .card {
+    border: 2px solid $blue;
+    border-radius: 2px;
+    margin: 0px 15px;
+    padding: 10px;
+  }
+}

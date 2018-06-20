@@ -1,0 +1,15 @@
+.btn__primary {
+  background-color: transparent;
+  width: 160px;
+  height: 35px;
+  border: 2px solid $blue;
+  color: $white;
+  font-weight: bold;
+  transition: 0.6s ease-out;
+  &:hover {
+    background-color: $blue;
+    cursor: pointer;
+    transition: 0.6s ease-in;
+    border-radius: 2px;
+  }
+}

@@ -2,7 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Istok+Web');
 
 // Import settings
-
 @import "settings/colors",
         "settings/general",
         "settings/text";
+
+// Import modules
+@import "modules/navbar",
+        "modules/cards";
+
+// Import partials
+@import "partials/buttons";

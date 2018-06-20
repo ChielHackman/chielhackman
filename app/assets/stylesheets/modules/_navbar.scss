@@ -1,0 +1,41 @@
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $black;
+  overflow-x: hidden;
+  box-shadow: 0px 5px 15px $black;
+  color: $white;
+  .sidenav__heading {
+    text-align: center;
+    h2 {
+      padding: 20px 0px;
+    }
+    img {
+      border-radius: 50%;
+    }
+  }
+  .sidenav__body {
+    text-align: center;
+    padding: 25px 10px;
+    p {
+      font-style: italic;
+    }
+  }
+  .sidenav__footer {
+    padding: 25px 10px;
+    text-align: center;
+    button {
+      margin-bottom: 25px;
+    }
+    small {
+      position: absolute;
+      bottom: 3px;
+      left: 50px;
+      margin: auto;
+    }
+  }
+}

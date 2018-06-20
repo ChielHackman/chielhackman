@@ -7,4 +7,25 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+  -# Navigation
+  .sidenav
+    .sidenav__heading
+      %h2
+        Chiel Hackman
+      %image{:src => "/images/profile_picture_chiel.jpg"}
+      %h2.text--green Webdeveloper
+      %hr
+    .sidenav__body
+      %q Without requirements or design, programming is the art of adding bugs to an empty text file.
+      %p.text--blue Louis Srygley
+    %hr
+    .sidenav__footer
+      %button.btn__primary
+        Blog
+      %button.btn__primary
+        About
+      %small &copy; 2018 Chiel Hackman
+
+  -# Main content
+  .main
     = yield
