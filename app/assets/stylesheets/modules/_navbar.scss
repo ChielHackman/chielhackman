@@ -9,6 +9,15 @@
   overflow-x: hidden;
   box-shadow: 0px 5px 15px $black;
   color: $white;
+  transition: margin-left .5s;
+  .closebtn {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
   .sidenav__heading {
     text-align: center;
     h2 {
@@ -37,5 +46,38 @@
       left: 50px;
       margin: auto;
     }
+  }
+}
+
+.hamburger {
+  position: fixed;
+  display: none;
+  .icon--first {
+    width: 35px;
+    height: 4px;
+    background-color: $blue;
+    margin: 0px 0px 6px 0px;
+  }
+  .icon--second, .icon--third {
+    width: 35px;
+    height: 4px;
+    background-color: $blue;
+    margin: 6px 0px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidenav {
+    width: 0px;
+    transition: 0.6s;
+    .closebtn {
+      display: block;
+    }
+  }
+  .hamburger {
+    display: block;
   }
 }

@@ -1,25 +1,22 @@
 .signup__box {
-  width: 50%;
-  border: 1px solid $black;
   border-radius: 2px;
   margin: 0px auto;
   padding: 10px;
   text-align: center;
-  h3 {
+  h2 {
     color: $blue;
-    text-align: center;
   }
   form {
     text-align: center;
     input[type="email"] {
       padding: 5px 10px;
-      margin: 20px 0px 5px 0px;
+      margin: 10px 0px 5px 0px;
       width: 250px;
       border: 1px solid $green;
     }
     input[type="submit"] {
       padding: 5px 10px;
-      margin: 20px 0px 5px -5px;
+      margin: 10px 0px 5px -5px;
       background-color: $green;
       color: $white;
       border: 1px solid $green;

@@ -7,6 +7,7 @@
 .main {
   margin-left: 250px;
   padding: 10px 20px;
+  transition: margin-left .5s;
 }
 
 .alert {
@@ -20,4 +21,11 @@
 
 .alert-success {
   color: $green;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    margin-left: 0px;
+    padding: 10px 5px;
+  }
 }

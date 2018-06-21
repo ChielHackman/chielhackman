@@ -1,6 +1,7 @@
 !!!
 %html
   %head
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Chiel Hackman - Webdeveloper
     = csrf_meta_tags
@@ -8,7 +9,8 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
   -# Navigation
-  .sidenav
+  .sidenav#sidenav
+    %a.closebtn{:href => "javascript:void(0)", :onclick => "closeNav()"} &times;
     .sidenav__heading
       %h2
         Chiel Hackman
@@ -30,7 +32,11 @@
       %small &copy; 2018 Chiel Hackman
 
   -# Main content
-  .main
+  .main#main
+    .hamburger{:onclick => "openNav();"}
+      .icon--first
+      .icon--second
+      .icon--third
     - flash.each do |key, value|
       .modal{ :id => "myModal" }
         .modal-content{ class: key }
