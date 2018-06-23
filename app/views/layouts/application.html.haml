@@ -24,8 +24,8 @@
     .sidenav__footer
       = link_to root_path do
         %button.btn__primary Home
-      %button.btn__primary
-        Blog - Ruby on Rails
+      = link_to posts_path do
+        %button.btn__primary Blog - Ruby on Rails
       = link_to about_path do
         %button.btn__primary About
 

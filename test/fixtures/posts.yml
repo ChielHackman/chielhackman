@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  body: MyText
+  author: MyString
+  ruby_version: MyString
+  rails_version: MyString
+
+two:
+  title: MyString
+  body: MyText
+  author: MyString
+  ruby_version: MyString
+  rails_version: MyString
